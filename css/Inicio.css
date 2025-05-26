@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor del menú */
+.izquierda-menu {
+  position: relative;
+  width: fit-content;
+  font-family: sans-serif;
+}
+
+/* Icono del menu*/
+.menu-icono {
+  background-color: #707070;
+  color: rgb(0, 0, 0);
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Lista del menú */
+.enlaces {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #707070;
+  list-style: none;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid #444;
+  z-index: 1000;
+}
+
+/* Estilos de los enlaces */
+.enlaces li a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.enlaces li a:hover {
+  background-color: #707070;
+}
+
+/* Mostrar el menú al pasar el ratón por encima */
+.izquierda-menu:hover .enlaces {
+  display: flex;
+}
+
+/* Configuracion de la zona superior.*/
+.superior {
+  background-color: #707070;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+}
+.Inicio_sesion {
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+}
+.Logo p {
+    font-size: 25px;
+}
+.Inicio_sesion p {
+    font-size: 25px;
+    b
+}
